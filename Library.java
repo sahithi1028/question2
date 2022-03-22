@@ -19,10 +19,10 @@ public class Library {
 		add.setCustomerAddress("23 Baker street,  zoo");
 		
 		
-		Customer custo = new Customer();
-	    custo.setCustomerName("raju");
-	    custo.setCustomerEmail("raju123@gmail.com");
-	    custo.setCustomerAddress(add);
+		Customer customer = new Customer();
+	    customer.setCustomerName("raju");
+	    customer.setCustomerEmail("raju123@gmail.com");
+	    customer.setCustomerAddress(add);
 		
 		entitymanager.getTransaction().begin();
 		entitymanager.persist(custo);
